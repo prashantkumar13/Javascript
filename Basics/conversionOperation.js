@@ -1,4 +1,4 @@
-let score = true
+let score = "45"
 
 // console.log(typeof score);
 // console.log(typeof(score)); // both are same 
@@ -40,16 +40,16 @@ let str1 = "hello"
 let str2 = " Prashant"
 let str3 = str1 + str2
 
-// console.log(str3);
+console.log(str3);
 
 // console.log("1" + 3); // 13
 // console.log(1 + "3"); // 13
 // console.log("1" + 3 + 3); // 133
 // console.log(1 + 1 + "3"); // 23
 
-let gameCounter = 23
-gameCounter++;
+// let gameCounter = 23
+// gameCounter++;
 
-console.log(gameCounter); // 24
+// console.log(gameCounter); // 24
 
 
