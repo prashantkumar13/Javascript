@@ -1,1 +1,0 @@
-console.table([accountId, accountEmail, accountPassward, accountCity, accountState])

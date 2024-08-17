@@ -19,3 +19,4 @@
 
 // === strictly check (values and datatype)
 console.log("2" === 2)
+console.log(true == 1)
