@@ -1,3 +1,1 @@
-for (const num of array) {
-//     // console.log(num)
-// }
+.filter( (num) => num >= 40)
