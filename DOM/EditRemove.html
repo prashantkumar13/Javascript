@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Learing</title>
+</head>
+<body style="background-color: #212121 ; color :white">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    //write a function to add language
+    //method 1
+    function addLanguage(langName){
+        const li = document.createElement('li') //ye method se kabhi long list rahi to dikkt aa skta hai
+        li.innerHTML = `${langName}`            // because innerHTML pura traverse karke last me pahuchke aad karta hai
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage('Python')
+    addLanguage('MongoDB')
+
+
+    //method 2 direct add karta hai 
+    function optimize(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    
+    optimize('Ruby')
+    optimize('BootsTrap')
+
+
+    //edit
+    // we have to edit 2 list
+    const secondLang = document.querySelector('li:nth-child(2)')
+    console.log(secondLang)
+    //method1
+    // secondLang.innerHTML = 'Mojo'
+
+    //method 2
+    const li = document.createElement('li')
+    li.textContent = 'Mojo'
+    console.log(li)
+    secondLang.replaceWith(li)
+
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = '<li>Typescript</li>'
+
+    console.log(firstLang)
+
+
+    //remove
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
+</script>
+</html>
